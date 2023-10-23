@@ -9,9 +9,14 @@ def play():
 	secret_number = random.randint(0, 100)
 	tries = 0
 	score = 300
+	difficult = False
 
-	print("Easy: 1\nMedium: 2\nHard: 3")
-	difficult = int(input("Select difficult: "))
+	while not difficult:
+		try:
+			print("Easy: 1\nMedium: 2\nHard: 3")
+			difficult = int(input("Select difficult: "))
+		except ValueError:
+			print("Not a number, try again")
 
 	match difficult:
 		case 1:
@@ -20,6 +25,9 @@ def play():
 			tries = 5
 		case 3:
 			tries = 3
+		case _:
+			print("Not a valid number")
+			
 
 	print(tries)
 
