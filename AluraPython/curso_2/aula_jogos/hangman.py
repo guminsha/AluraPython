@@ -47,8 +47,8 @@ def draw_hang(lifes):
     print()
 
 def create_secret_word():
-    file = open(os.path.join("AluraPython/frutas.txt"))
-    with open(os.path.join("AluraPython/frutas.txt")) as file:
+    file = open(os.path.join("AluraPython/curso_2/aula_jogos/frutas.txt"))
+    with open(os.path.join("AluraPython/curso_2/aula_jogos/frutas.txt")) as file:
         fruit_list = file.read().split(", ")
     file.close()
 
