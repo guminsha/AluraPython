@@ -8,6 +8,44 @@ def introdution():
     print("****************************")
 
 
+def draw_hang(lifes):
+    print("  _______     ")
+    print(" |/      |    ")
+
+    if(lifes == 4):
+        print(" |      (_)   ")
+        print(" |            ")
+        print(" |            ")
+        print(" |            ")
+
+    if(lifes == 3):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |            ")
+        print(" |            ")
+
+    if(lifes == 2):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |            ")
+    
+    if(lifes == 1):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |        \   ")
+
+    if (lifes == 0):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      / \   ")
+
+    print(" |            ")
+    print("_|___         ")
+    print()
+
 def create_secret_word():
     file = open(os.path.join("AluraPython/frutas.txt"))
     with open(os.path.join("AluraPython/frutas.txt")) as file:
@@ -72,17 +110,20 @@ def play():
     correct = False
     died = False
 
+    draw_hang(lifes)
+
     while not correct and not died:
         print(f"You have {lifes} guesses")
         guess = create_guess(correct_caracters)
 
         correct_caracters = check_correct_guess(guess, secret_word, correct_caracters)
         lifes = check_wrong_guess(guess, secret_word, lifes)
-
-        print(correct_caracters)
         
         correct = check_win(correct_caracters, secret_word)
         died = check_death(lifes)
+
+        draw_hang(lifes)
+        print(correct_caracters)
     
     if correct:
         print("\nCongrats, you won!")
