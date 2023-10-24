@@ -1,4 +1,4 @@
-import guess
+import guess_number
 import hangman
 
 print("****************************")
@@ -14,7 +14,7 @@ while not game_mode:
 		print("Not a number, try again")
 		
 
-guess_number = guess
+guess_number = guess_number
 hangman_game = hangman
 
 match game_mode:
