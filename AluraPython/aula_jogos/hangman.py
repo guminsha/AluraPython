@@ -1,4 +1,5 @@
 import random
+import os
 
 
 def introdution():
@@ -8,8 +9,8 @@ def introdution():
 
 
 def create_secret_word():
-    file = open("AluraPython\\frutas.txt")
-    with open("AluraPython\\frutas.txt") as file:
+    file = open(os.path.join("AluraPython/frutas.txt"))
+    with open(os.path.join("AluraPython/frutas.txt")) as file:
         fruit_list = file.read().split(", ")
     file.close()
 
