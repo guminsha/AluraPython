@@ -7,3 +7,5 @@ account3 = Account(6265, "Brian", 2000)
 print(account1)
 print(account2)
 print(account3)
+
+account1.extract()
