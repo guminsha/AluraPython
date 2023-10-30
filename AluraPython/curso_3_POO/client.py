@@ -9,4 +9,5 @@ class Client():
 	
 	@name.setter
 	def name(self, name):
+		print("Calling @name.setter")
 		self.__name = name

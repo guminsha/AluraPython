@@ -11,3 +11,14 @@ client1 = Client("evandro")
 client1.name = "brian"
 
 print(client1.name)
+
+account3.limit = 3000
+print(account3.limit)
+
+account3.withdraw(7000)
+print(account3.balance)
+
+print(Account.bank_code())
+print(Account.code_banks()["Bradesco"])
+
+
