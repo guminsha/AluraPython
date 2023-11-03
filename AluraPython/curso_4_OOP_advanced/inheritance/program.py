@@ -18,6 +18,3 @@ class Program:
 	
 	def new_like(self):
 		self._likes += 1
-
-	def show_info(self):
-		return f"Movie name: {self.name} - Year: {self.year} - Likes: {self.likes}"

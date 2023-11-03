@@ -9,6 +9,6 @@ class Serie(Program):
 	def seasons(self):
 		return self.__seasons
 	
-	def show_info(self):
-		print(f"{super().show_info()} - Seasons: {self.seasons}")
+	def __str__(self) -> str:
+		return f"Serie name: {self.name} - Year: {self.year} - Seasons: {self.seasons} - Likes: {self.likes}"
 		

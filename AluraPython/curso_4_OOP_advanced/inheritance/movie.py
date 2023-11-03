@@ -8,6 +8,7 @@ class Movie(Program):
 	@property
 	def duration(self):
 		return self.__duration
-
-	def show_info(self):
-		print(f"{super().show_info()} - Duration: {self.duration}min")
+	
+	def __str__(self) -> str:
+		return f"Movie name: {self.name} - Year: {self.year} - Duration: {self.duration} - Likes: {self.likes}"
+	
