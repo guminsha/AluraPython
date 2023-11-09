@@ -7,7 +7,7 @@ andre = MidEntry()
 paulo = Senior("Paulo")
 
 jose.show_tasks()
-andre.show_tasks() 
+andre.show_tasks()
 paulo.show_tasks()
 
 # MRO
@@ -17,4 +17,3 @@ print(andre)
 print(paulo)
 
 # MIXIN
-

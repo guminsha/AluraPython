@@ -11,14 +11,14 @@ resident_evil = Movie("Resident evil 4", 2014, 130)
 
 movies_series = [avangers, atlanta, daredevil, scary_movie]
 
-for i in range(0,100):
-	rad_choice = random.choice(movies_series)
-	rad_choice.new_like()
+for i in range(0, 100):
+    rad_choice = random.choice(movies_series)
+    rad_choice.new_like()
 
 weekend_playlist = Playlist("Weekend Playlist", movies_series)
 
 for program in weekend_playlist:
-	print(program)
+    print(program)
 
 print(f"Playlist size is: {len(weekend_playlist)}")
 print(f"{daredevil.name} is in Playlist? {weekend_playlist.verify(daredevil)}")
