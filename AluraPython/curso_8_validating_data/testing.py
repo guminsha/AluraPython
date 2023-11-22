@@ -1,6 +1,8 @@
-from cpf import Cpf
+from document import Document # Factory
 # from validate_docbr import CPF # pip install validate_docbr
 
-cpf1 = Cpf("94695916132")
-
+cpf1 = Document.create_doc("12423813090")
 print(cpf1)
+
+cnpj1 = Document.create_doc("43427961000190")
+print(cnpj1)

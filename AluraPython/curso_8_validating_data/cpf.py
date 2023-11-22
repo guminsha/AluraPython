@@ -1,10 +1,9 @@
 import re
 from validate_docbr import CPF
+#from document import Document
 
 class Cpf:
-	
 	def __init__(self, doc) -> None:
-
 		if self.valid_cpf(doc):
 			self.cpf = doc
 		else:
