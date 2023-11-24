@@ -4,8 +4,6 @@ from code.bytebank import Employee
 # print(lucas)
 # print(lucas.age())
 
-def test_age():
-	employee_test = Employee("Teste", "13/03/2000", 1111)
-	print(f"Teste = {employee_test.age()}")
+ana = Employee("Ana", "12/03/1997", 1000)
 
-test_age()
+print(ana.salary_bonus())
