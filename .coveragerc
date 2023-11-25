@@ -1,0 +1,9 @@
+[run]
+source = C:\Users\Brian\PycharmProjects\aluraProject\AluraPython\curso_9_tests_tdd\code
+
+[report]
+exclude_lines =
+	def __str__
+
+[html]
+directory = coverage_report

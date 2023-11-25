@@ -2,6 +2,9 @@ from ..code.bytebank import Employee
 import pytest
 from pytest import mark
 
+# pytest --cov="dir" "test dir" --cov-report term-missing
+# pytest --cov="dir" "test dir" --cov-report html
+
 class TestClass:
     def test_when_age_receives_13_03_2000_must_return_23(self):
         input_date = "13/03/2000"  # Given-Contexto
@@ -51,3 +54,14 @@ class TestClass:
             result = test_employee.salary_bonus()
 
             assert result
+
+    # def test__str_must_return_class_information_string(self):
+    #     input_name = "Test"
+    #     input_birth = "12/03/2000"
+    #     input_salary = 1000
+    #     output = "Employee: Test, Birth: 12/03/2000, 1000"
+
+    #     test_employee = Employee(input_name, input_birth, input_salary)
+    #     result = test_employee.__str__()
+
+    #     assert result == output
